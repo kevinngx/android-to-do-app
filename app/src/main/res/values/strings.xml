@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">To Do App</string>
+    <string name="due_time">09:00pm\n</string>
+    <string name="create_task">Create Task</string>
+    <string name="due_date">YYYY-MM-DD</string>
+    <string name="task_description">Task description</string>
+    <string name="task_title">Task title</string>
+</resources>

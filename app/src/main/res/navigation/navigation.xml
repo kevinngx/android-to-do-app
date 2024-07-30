@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.android.todoapp.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_taskCreateFragment"
+            app:destination="@id/taskCreateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskCreateFragment"
+        android:name="com.example.android.todoapp.taskcreate.TaskCreateFragment"
+        android:label="fragment_task_create"
+        tools:layout="@layout/fragment_task_create" >
+        <action
+            android:id="@+id/action_taskCreateFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+</navigation>
